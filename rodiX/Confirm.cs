@@ -20,6 +20,7 @@ namespace rodiX
             pat = path;
             this.BackColor = a;
             this.ForeColor = b;
+            button3.ForeColor = b;
         }
         //0 = name
         //1 = password

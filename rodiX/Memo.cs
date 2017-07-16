@@ -40,6 +40,7 @@ namespace rodiX
             textBox1.Text = textBox1.Text.Replace(": 8 :", ": 08 :");
             textBox1.Text = textBox1.Text.Replace(": 9 :", ": 09 :");
             textBox1.Text = textBox1.Text.Replace("   ", " ");
+            button3.ForeColor = textBox1.ForeColor;
           
         }
 
@@ -51,6 +52,16 @@ namespace rodiX
         private void Memo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_ForeColorChanged(object sender, EventArgs e)
+        {
+            button3.ForeColor = textBox1.ForeColor;
         }
     }
 }

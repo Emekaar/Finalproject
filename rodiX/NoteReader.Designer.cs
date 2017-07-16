@@ -32,29 +32,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NoteReader));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.reverseTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.capatalizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toLowerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.makeAcronymToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solveExpressionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backGroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.foreFroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.replaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gotoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.makeReadOnlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enableDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.endOfLinrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,34 +64,27 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoToolStripMenuItem,
-            this.toolStripSeparator1,
             this.cutToolStripMenuItem,
             this.copyToolStripMenuItem,
             this.pasteToolStripMenuItem,
-            this.toolStripSeparator3,
             this.selectAllToolStripMenuItem,
-            this.toolStripSeparator2,
             this.reverseTextToolStripMenuItem,
-            this.toolStripSeparator4,
             this.capatalizeToolStripMenuItem,
             this.toLowerToolStripMenuItem,
-            this.toolStripSeparator5,
             this.makeAcronymToolStripMenuItem,
             this.solveExpressionToolStripMenuItem,
-            this.toolStripSeparator6,
             this.fontToolStripMenuItem,
             this.backGroundToolStripMenuItem,
             this.foreFroundToolStripMenuItem,
-            this.toolStripSeparator7,
             this.findToolStripMenuItem,
             this.replaceToolStripMenuItem,
             this.gotoToolStripMenuItem,
-            this.toolStripSeparator8,
             this.makeReadOnlyToolStripMenuItem,
             this.enableDocumentToolStripMenuItem,
             this.endOfLinrToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 470);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 422);
+            this.contextMenuStrip1.Paint += new System.Windows.Forms.PaintEventHandler(this.contextMenuStrip1_Paint);
             // 
             // undoToolStripMenuItem
             // 
@@ -107,11 +92,6 @@
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(165, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -134,11 +114,6 @@
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(165, 6);
-            // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
@@ -146,22 +121,12 @@
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(165, 6);
-            // 
             // reverseTextToolStripMenuItem
             // 
             this.reverseTextToolStripMenuItem.Name = "reverseTextToolStripMenuItem";
             this.reverseTextToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.reverseTextToolStripMenuItem.Text = "Reverse Text";
             this.reverseTextToolStripMenuItem.Click += new System.EventHandler(this.reverseTextToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(165, 6);
             // 
             // capatalizeToolStripMenuItem
             // 
@@ -177,11 +142,6 @@
             this.toLowerToolStripMenuItem.Text = "To Lower";
             this.toLowerToolStripMenuItem.Click += new System.EventHandler(this.toLowerToolStripMenuItem_Click);
             // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(165, 6);
-            // 
             // makeAcronymToolStripMenuItem
             // 
             this.makeAcronymToolStripMenuItem.Name = "makeAcronymToolStripMenuItem";
@@ -195,11 +155,6 @@
             this.solveExpressionToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.solveExpressionToolStripMenuItem.Text = "Solve Expression";
             this.solveExpressionToolStripMenuItem.Click += new System.EventHandler(this.solveExpressionToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(165, 6);
             // 
             // fontToolStripMenuItem
             // 
@@ -222,11 +177,6 @@
             this.foreFroundToolStripMenuItem.Text = "Foreground";
             this.foreFroundToolStripMenuItem.Click += new System.EventHandler(this.foreFroundToolStripMenuItem_Click);
             // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(165, 6);
-            // 
             // findToolStripMenuItem
             // 
             this.findToolStripMenuItem.Name = "findToolStripMenuItem";
@@ -247,11 +197,6 @@
             this.gotoToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.gotoToolStripMenuItem.Text = "Goto";
             this.gotoToolStripMenuItem.Click += new System.EventHandler(this.gotoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(165, 6);
             // 
             // makeReadOnlyToolStripMenuItem
             // 
@@ -301,7 +246,6 @@
             this.textBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.textBox1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.textBox1.IndentBackColor = System.Drawing.Color.Transparent;
             this.textBox1.IsReplaceMode = false;
             this.textBox1.LeftBracket = '\'';
@@ -391,31 +335,23 @@
 
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem reverseTextToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem capatalizeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toLowerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem makeAcronymToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem solveExpressionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backGroundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem foreFroundToolStripMenuItem;
         private FastColoredTextBoxNS.FastColoredTextBox textBox1;
         private FastColoredTextBoxNS.Ruler ruler1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem replaceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gotoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem makeReadOnlyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem enableDocumentToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;

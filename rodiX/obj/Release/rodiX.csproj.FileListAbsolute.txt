@@ -1,4 +1,3 @@
-C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Release\rodiX.exe.config
 C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Release\rodiX.exe
 C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Release\rodiX.pdb
 C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.CreateAccount.resources
@@ -22,3 +21,5 @@ C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Release\rod
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.Settings.resources
 C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.Memo.resources
 C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Release\Calendar.NET.dll
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Release\Meigen.dll
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.tut.resources

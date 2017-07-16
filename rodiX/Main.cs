@@ -308,6 +308,8 @@ namespace rodiX
                         string qy = fullpath + treeView1.SelectedNode.Name.Replace("?", "AAAAAAAAAA");
                     (new FileInfo(qy)).Attributes = FileAttributes.Normal;
                     File.Delete(qy);
+                    qy = fullpath + @"s\" + treeView1.SelectedNode.Name.Replace("?", "AAAAAAAAAA");
+                    File.Delete(qy);
                     treeView1.Nodes.Clear();
                     List(fullpath, "0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv");
                     if (File.Exists(fullpath + "11.dll"))
@@ -653,6 +655,28 @@ namespace rodiX
                 g.textBox1.ForeColor = e.Control.ForeColor;
                 g.textBox1.BackColor = e.Control.BackColor;
                 label1.ForeColor = e.Control.ForeColor;
+                newNoteToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                renameNoteToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                deleteToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                contextMenuStrip1.BackColor = e.Control.BackColor;
+                contextMenuStrip1.ForeColor = e.Control.ForeColor;
+                calculatorToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                calenderToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                settingsToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                logoutToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                memoToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                saveAccountToFileToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                newNoteToolStripMenuItem1.ForeColor = e.Control.ForeColor;
+                changeNoteTextFontToolStripMenuItem.ForeColor = e.Control.ForeColor;
+                calculatorToolStripMenuItem.BackColor = e.Control.BackColor;
+                calenderToolStripMenuItem.BackColor = e.Control.BackColor;
+                settingsToolStripMenuItem.BackColor = e.Control.BackColor;
+                logoutToolStripMenuItem.BackColor = e.Control.BackColor;
+                memoToolStripMenuItem.BackColor = e.Control.BackColor;
+                saveAccountToFileToolStripMenuItem.BackColor = e.Control.BackColor;
+                newNoteToolStripMenuItem1.BackColor = e.Control.BackColor;
+                changeNoteTextFontToolStripMenuItem.BackColor = e.Control.BackColor;
+
             }
             catch (Exception)
             {
@@ -670,6 +694,15 @@ namespace rodiX
                 textBox1.BackColor = i.BackColor;
                 v.textBox1.BackColor = i.BackColor;
                 g.textBox1.BackColor = i.BackColor;
+                contextMenuStrip1.BackColor = i.BackColor;
+                calculatorToolStripMenuItem.BackColor = i.BackColor;
+                calenderToolStripMenuItem.BackColor = i.BackColor;
+                settingsToolStripMenuItem.BackColor = i.BackColor;
+                logoutToolStripMenuItem.BackColor = i.BackColor;
+                memoToolStripMenuItem.BackColor = i.BackColor;
+                saveAccountToFileToolStripMenuItem.BackColor = i.BackColor;
+                newNoteToolStripMenuItem1.BackColor = i.BackColor;
+                changeNoteTextFontToolStripMenuItem.BackColor = i.BackColor;
             }
             catch (Exception)
             {
@@ -685,9 +718,20 @@ namespace rodiX
                 this.BackColor = i.BackColor;
                 treeView1.ForeColor = i.ForeColor;
                 textBox1.ForeColor = i.ForeColor;
-                v.textBox1.ForeColor = v.ForeColor;
-                g.textBox1.ForeColor = v.ForeColor;
-                label1.ForeColor = i.ForeColor;
+                v.textBox1.ForeColor = i.ForeColor;
+                g.textBox1.ForeColor = i.ForeColor;
+                newNoteToolStripMenuItem.ForeColor = i.ForeColor;
+                renameNoteToolStripMenuItem.ForeColor = i.ForeColor;
+                deleteToolStripMenuItem.ForeColor = i.ForeColor;
+                contextMenuStrip1.ForeColor = i.ForeColor;
+                calculatorToolStripMenuItem.ForeColor = i.ForeColor;
+                calenderToolStripMenuItem.ForeColor = i.ForeColor;
+                settingsToolStripMenuItem.ForeColor = i.ForeColor;
+                logoutToolStripMenuItem.ForeColor = i.ForeColor;
+                memoToolStripMenuItem.ForeColor = i.ForeColor;
+                saveAccountToFileToolStripMenuItem.ForeColor = i.ForeColor;
+                newNoteToolStripMenuItem1.ForeColor = i.ForeColor;
+                changeNoteTextFontToolStripMenuItem.ForeColor = i.ForeColor;
             }
             catch (Exception)
             {
@@ -698,7 +742,7 @@ namespace rodiX
         {
             try
             {
-
+                fontDialog1.Font = treeView1.Font;
                 if (fontDialog1.ShowDialog() == DialogResult.OK)
                 {
                     treeView1.Font = fontDialog1.Font;

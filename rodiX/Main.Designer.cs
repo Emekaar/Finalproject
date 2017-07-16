@@ -46,9 +46,9 @@
             this.memoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAccountToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.newNoteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.changeNoteTextFontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -129,31 +129,36 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.Black;
+            this.contextMenuStrip1.DropShadowEnabled = false;
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newNoteToolStripMenuItem,
             this.renameNoteToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(147, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
             // 
             // newNoteToolStripMenuItem
             // 
+            this.newNoteToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.newNoteToolStripMenuItem.Name = "newNoteToolStripMenuItem";
-            this.newNoteToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newNoteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newNoteToolStripMenuItem.Text = "New Note";
             this.newNoteToolStripMenuItem.Click += new System.EventHandler(this.newNoteToolStripMenuItem_Click);
             // 
             // renameNoteToolStripMenuItem
             // 
+            this.renameNoteToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.renameNoteToolStripMenuItem.Name = "renameNoteToolStripMenuItem";
-            this.renameNoteToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.renameNoteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.renameNoteToolStripMenuItem.Text = "Rename Note";
             this.renameNoteToolStripMenuItem.Click += new System.EventHandler(this.renameNoteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -165,7 +170,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 6);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(128, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(36, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -227,10 +232,6 @@
             this.saveAccountToFileToolStripMenuItem.Text = "Backup Account";
             this.saveAccountToFileToolStripMenuItem.Click += new System.EventHandler(this.saveAccountToFileToolStripMenuItem_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // newNoteToolStripMenuItem1
             // 
             this.newNoteToolStripMenuItem1.Name = "newNoteToolStripMenuItem1";
@@ -244,6 +245,10 @@
             this.changeNoteTextFontToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.changeNoteTextFontToolStripMenuItem.Text = "Change Note text font";
             this.changeNoteTextFontToolStripMenuItem.Click += new System.EventHandler(this.changeNoteTextFontToolStripMenuItem_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // fontDialog1
             // 

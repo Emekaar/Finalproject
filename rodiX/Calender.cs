@@ -17,6 +17,7 @@ namespace rodiX
             InitializeComponent();
             coloa(a, b);
             this.BackColor = a;
+            button26.ForeColor = calendar1.ForeColor;
         }
 
         private void Calender_Load(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace rodiX
         {
             calendar1.BackColor = a;
             calendar1.ForeColor = b;
+            button26.ForeColor = calendar1.ForeColor; ;
         }
         private void Calender_ForeColorChanged(object sender, EventArgs e)
         {

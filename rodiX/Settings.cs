@@ -13,6 +13,7 @@ namespace rodiX
             //get data and display on textboxes
             this.BackColor = aa;
             this.ForeColor = bb;
+            button3.ForeColor = bb;
             try
             {
                 oldpassword = username + " " + password;

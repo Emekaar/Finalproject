@@ -62,6 +62,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(708, 537);
             this.textBox1.TabIndex = 15;
+            this.textBox1.ForeColorChanged += new System.EventHandler(this.textBox1_ForeColorChanged);
             // 
             // panel1
             // 
@@ -74,6 +75,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(708, 567);
             this.panel1.TabIndex = 16;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Memo
             // 

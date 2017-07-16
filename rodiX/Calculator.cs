@@ -122,6 +122,7 @@ namespace rodiX
             textBox1.ForeColor = this.ForeColor;
             textBox2.ForeColor = this.ForeColor;
             treeView1.ForeColor = this.ForeColor;
+            button26.ForeColor = this.ForeColor;
         }
 
         private void Calculator_BackColorChanged(object sender, EventArgs e)

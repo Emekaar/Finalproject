@@ -375,11 +375,23 @@ namespace rodiX
         private void textBox1_ForeColorChanged(object sender, EventArgs e)
         {
             this.ForeColor = textBox1.ForeColor;
+            contextMenuStrip1.ForeColor = textBox1.ForeColor;
+
         }
 
         private void textBox1_BackColorChanged(object sender, EventArgs e)
         {
             this.BackColor = textBox1.BackColor;
+            contextMenuStrip1.BackColor = textBox1.BackColor;
+        }
+
+        private void contextMenuStrip1_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawString("r", this.Font, Brushes.Crimson, 1, 0);
+            e.Graphics.DrawString("o", this.Font, Brushes.Crimson, 1, 20);
+            e.Graphics.DrawString("d", this.Font, Brushes.Crimson, 1, 30);
+            e.Graphics.DrawString("i", this.Font, Brushes.Crimson, 1, 40);
+            e.Graphics.DrawString("X", this.Font, Brushes.Crimson, 0, 50);
         }
     }
 }
