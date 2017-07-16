@@ -83,5 +83,25 @@ namespace rodiX
             d = (new EncodePanel()).finaldecryption(d, "0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv");
             MessageBox.Show(d);
         }
+
+        private void ame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            {
+                ans.Focus();
+            }
+        }
+
+        private void ans_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            {
+                button2.PerformClick();
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                ame.Focus();
+            }
+        }
     }
 }

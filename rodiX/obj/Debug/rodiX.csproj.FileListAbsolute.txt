@@ -20,3 +20,5 @@ C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\bin\Debug\Month
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Calender.resources
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Confirm.resources
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Settings.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Memo.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\Calendar.NET.dll

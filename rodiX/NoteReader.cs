@@ -14,6 +14,10 @@ namespace rodiX
             InitializeComponent();
             //opened = file being worked on
 
+            Timer pqp = new Timer();
+            pqp.Tick += Pqp_Tick;
+            pqp.Interval = 30000;
+            pqp.Start();
 
             string a = fullname.Replace("?", "AAAAAAAAAA");//real filename
             string b = path;
@@ -55,12 +59,13 @@ namespace rodiX
                 if (n1.Contains(caller.Replace("?", "AAAAAAAAAA")))//if filename contains username open it
 
                 {
-                    //
-                    string ee = a + b;
-                    textBox1.Text = (new EncodePanel()).decrypt64(File.ReadAllText(n1).Replace("AAAAAAAAAAAAAAAAAAAAAA","="));
-
-                    q.Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly | FileAttributes.Encrypted;
-                    
+                    //                                      
+                    string ee = a + b;     //AAAAAAAAAAAAAAAAAAAAAA ==AA                     
+                    string coke = File.ReadAllText(n1).Replace("==AA", "AAAAAAAAAAAAAAAAAAAAAA").Replace("AAAAAAAAAAAAAAAAAAAAAA", "=").Replace("==", "AAAAAAAAAAAAAAAAAAAA");
+                    coke = coke.Replace("ainrifcowismkmide", "");
+                    coke = reverse(coke);
+                    textBox1.Text = (new EncodePanel()).decrypt64(coke);
+                     
                 }
             }
             catch (Exception df)
@@ -76,10 +81,12 @@ namespace rodiX
 
                     {
                         string ee = a + b;
-                        textBox1.Text = (new EncodePanel()).decrypt64(File.ReadAllText(n1).Replace("AAAAAAAAAAAAAAAAAAAAAA", "="));
+                        string coke = File.ReadAllText(n1).Replace("==AA", "AAAAAAAAAAAAAAAAAAAAAA").Replace("AAAAAAAAAAAAAAAAAAAAAA", "=").Replace("==", "AAAAAAAAAAAAAAAAAAAA");
+                        coke = coke.Replace("ainrifcowismkmide", "");
+                        coke = reverse(coke);
+                        textBox1.Text = (new EncodePanel()).decrypt64(coke);
 
-                        q.Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly | FileAttributes.Encrypted;
-                        
+                         
                     }
                 }
                 catch (Exception gg)
@@ -88,6 +95,17 @@ namespace rodiX
                 }
             }
         }
+       
+        string reverse(string sw)
+        {
+            char[] od = sw.ToCharArray();
+            Array.Reverse(od);
+            return new string(od);
+        }
+        private void Pqp_Tick(object sender, EventArgs e)
+        {
+        }
+
         private string n1 = "";
         
 
@@ -223,17 +241,22 @@ namespace rodiX
         {
             try
             {
-                FileInfo q = new FileInfo(n1);
-                //enable editing of file
-                q.Attributes = FileAttributes.Normal;
-                File.WriteAllText(n1, (new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA"));//save file
+                try
+                {
+                    File.WriteAllText(n1, "ainrifcowismkmide" + reverse((new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA")));//save file
 
-                q.Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly | FileAttributes.Encrypted;
-                //make file readonly,hidden and encrypted
+                }
+                catch (Exception g)
+                {
+                    n1 = n1.Split(' ')[0] + " " + n1.Split(' ')[2];
+                    MessageBox.Show(n1);
+                    File.WriteAllText(n1, "ainrifcowismkmide" + reverse((new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA")));//save file
+
+                }
             }
-            catch (Exception)
+            catch (Exception s)
             {
-
+                MessageBox.Show(s.Message);
             }
         }
 
@@ -287,6 +310,7 @@ namespace rodiX
         {
             toolStripStatusLabel1.Text = textBox1.Lines.Count.ToString() + " lines";
             toolStripStatusLabel2.Text = textBox1.Text.Replace(Environment.NewLine, " ").Replace("  "," ").Replace("  ", " ").Trim(' ').TrimStart(' ').TrimEnd(' ').Split(' ').Length.ToString() + " words";
+
         }
 
         
@@ -297,6 +321,65 @@ namespace rodiX
             
         }
 
-        
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                try
+                {
+                    File.WriteAllText(n1, "ainrifcowismkmide" + reverse((new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA")));//save file
+
+                }
+                catch (Exception g)
+                {
+                    n1 = n1.Split(' ')[0] + " " + n1.Split(' ')[2];
+                    MessageBox.Show(n1);
+                    File.WriteAllText(n1, "ainrifcowismkmide" + reverse((new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA")));//save file
+
+                }
+            }
+            catch (Exception s)
+            {
+                MessageBox.Show(s.Message);
+            }
+        }
+
+        private void textBox1_Pasting(object sender, FastColoredTextBoxNS.TextChangingEventArgs e)
+        {
+            try
+            {
+                try
+                {
+                    File.WriteAllText(n1, "ainrifcowismkmide" + reverse((new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA")));//save file
+
+                }
+                catch (Exception g)
+                {
+                    n1 = n1.Split(' ')[0] + " " + n1.Split(' ')[2];
+                    MessageBox.Show(n1);
+                    File.WriteAllText(n1, "ainrifcowismkmide" + reverse((new EncodePanel()).encrypt64(textBox1.Text).Replace("=", "AAAAAAAAAAAAAAAAAAAAAA")));//save file
+
+                }
+            }
+            catch (Exception s)
+            {
+                MessageBox.Show(s.Message);
+            }
+        }
+
+        private void textBox1_ForeColorChanged(object sender, EventArgs e)
+        {
+            this.ForeColor = textBox1.ForeColor;
+        }
+
+        private void textBox1_BackColorChanged(object sender, EventArgs e)
+        {
+            this.BackColor = textBox1.BackColor;
+        }
     }
 }

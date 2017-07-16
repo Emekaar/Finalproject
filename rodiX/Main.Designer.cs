@@ -43,8 +43,13 @@
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calenderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.memoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAccountToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.newNoteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeNoteTextFontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -68,6 +73,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.CursorChanged += new System.EventHandler(this.splitContainer1_Panel2_CursorChanged);
+            this.splitContainer1.Panel2.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.splitContainer1_Panel2_ControlAdded);
             this.splitContainer1.Size = new System.Drawing.Size(891, 603);
             this.splitContainer1.SplitterDistance = 195;
             this.splitContainer1.TabIndex = 0;
@@ -116,7 +122,10 @@
             this.treeView1.ShowRootLines = false;
             this.treeView1.Size = new System.Drawing.Size(192, 545);
             this.treeView1.TabIndex = 0;
+            this.treeView1.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.treeView1_AfterLabelEdit);
+            this.treeView1.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.treeView1_DrawNode);
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.treeView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.treeView1_KeyDown);
             // 
             // contextMenuStrip1
             // 
@@ -156,7 +165,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 6);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(36, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(128, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -167,7 +176,11 @@
             this.calculatorToolStripMenuItem,
             this.calenderToolStripMenuItem,
             this.settingsToolStripMenuItem,
-            this.logoutToolStripMenuItem});
+            this.memoToolStripMenuItem,
+            this.logoutToolStripMenuItem,
+            this.saveAccountToFileToolStripMenuItem,
+            this.newNoteToolStripMenuItem1,
+            this.changeNoteTextFontToolStripMenuItem});
             this.menuToolStripMenuItem.Image = global::rodiX.Properties.Resources.tkk;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
@@ -175,34 +188,67 @@
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
             // calenderToolStripMenuItem
             // 
             this.calenderToolStripMenuItem.Name = "calenderToolStripMenuItem";
-            this.calenderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calenderToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.calenderToolStripMenuItem.Text = "Calender";
             this.calenderToolStripMenuItem.Click += new System.EventHandler(this.calenderToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // memoToolStripMenuItem
+            // 
+            this.memoToolStripMenuItem.Name = "memoToolStripMenuItem";
+            this.memoToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.memoToolStripMenuItem.Text = "Log";
+            this.memoToolStripMenuItem.Click += new System.EventHandler(this.memoToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // saveAccountToFileToolStripMenuItem
+            // 
+            this.saveAccountToFileToolStripMenuItem.Name = "saveAccountToFileToolStripMenuItem";
+            this.saveAccountToFileToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.saveAccountToFileToolStripMenuItem.Text = "Backup Account";
+            this.saveAccountToFileToolStripMenuItem.Click += new System.EventHandler(this.saveAccountToFileToolStripMenuItem_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // logoutToolStripMenuItem
+            // newNoteToolStripMenuItem1
             // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            this.newNoteToolStripMenuItem1.Name = "newNoteToolStripMenuItem1";
+            this.newNoteToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
+            this.newNoteToolStripMenuItem1.Text = "New note";
+            this.newNoteToolStripMenuItem1.Click += new System.EventHandler(this.newNoteToolStripMenuItem1_Click);
+            // 
+            // changeNoteTextFontToolStripMenuItem
+            // 
+            this.changeNoteTextFontToolStripMenuItem.Name = "changeNoteTextFontToolStripMenuItem";
+            this.changeNoteTextFontToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.changeNoteTextFontToolStripMenuItem.Text = "Change Note text font";
+            this.changeNoteTextFontToolStripMenuItem.Click += new System.EventHandler(this.changeNoteTextFontToolStripMenuItem_Click);
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Color = System.Drawing.Color.Crimson;
+            this.fontDialog1.MinSize = 7;
             // 
             // Main
             // 
@@ -247,5 +293,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem memoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAccountToFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newNoteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem changeNoteTextFontToolStripMenuItem;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }

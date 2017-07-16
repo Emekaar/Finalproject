@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -6,10 +7,12 @@ namespace rodiX
 {
     public partial class Settings : Form
     {
-        public Settings(string username,string password,string path)
+        public Settings(string username,string password,string path,Color aa,Color bb)
         {
             InitializeComponent();
             //get data and display on textboxes
+            this.BackColor = aa;
+            this.ForeColor = bb;
             try
             {
                 oldpassword = username + " " + password;
@@ -21,9 +24,9 @@ namespace rodiX
                 ame.Text = (new EncodePanel()).finaldecryption(username, "0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv");
                 Password.Text = (new EncodePanel()).finaldecryption(password, "0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv");
             }
-            catch (Exception)
+            catch (Exception hr)
             {
-                MessageBox.Show("an error occured");
+                MessageBox.Show("Error");
                 this.Close();
                 throw;
             }

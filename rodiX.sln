@@ -10,11 +10,18 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		personal use|Any CPU = personal use|Any CPU
+		PersonalUse|Any CPU = PersonalUse|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.personal use|Any CPU.ActiveCfg = personal use|Any CPU
+		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.personal use|Any CPU.Build.0 = personal use|Any CPU
+		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.PersonalUse|Any CPU.ActiveCfg = Release|Any CPU
+		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.PersonalUse|Any CPU.Build.0 = Release|Any CPU
+		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.PersonalUse|Any CPU.Deploy.0 = Release|Any CPU
 		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E72A0EF-90E4-4A8A-9CA0-E75540221FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

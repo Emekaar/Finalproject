@@ -79,6 +79,7 @@ namespace rodiX
 
                     textBox1.Text += textBox2.Text;
                 }
+                treeView1.Nodes.Add(textBox1.Text + " = " + ("+" + (new NCalc.Expression(textBox1.Text)).Evaluate().ToString()).Replace("+-", "-"));
 
 
                 textBox2.Text = ("+" + (new NCalc.Expression(textBox1.Text)).Evaluate().ToString()).Replace("+-", "-");
@@ -91,8 +92,8 @@ namespace rodiX
 
                     textBox1.Text = textBox2.Text;
                 }
-
-                treeView1.Nodes.Add(textBox1.Text + " = " + textBox2.Text);
+                textBox2.Text = "";
+               
             }
             catch (Exception)
             {
@@ -109,6 +110,26 @@ namespace rodiX
         {
             textBox1.Clear();
             textBox2.Clear();
+        }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            treeView1.Nodes.Clear();
+        }
+
+        private void Calculator_ForeColorChanged(object sender, EventArgs e)
+        {
+            textBox1.ForeColor = this.ForeColor;
+            textBox2.ForeColor = this.ForeColor;
+            treeView1.ForeColor = this.ForeColor;
+        }
+
+        private void Calculator_BackColorChanged(object sender, EventArgs e)
+        {
+            textBox1.BackColor = this.BackColor;
+            textBox2.BackColor = this.BackColor;
+            treeView1.BackColor = this.BackColor;
+
         }
     }
 }

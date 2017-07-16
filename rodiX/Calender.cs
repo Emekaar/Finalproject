@@ -12,19 +12,40 @@ namespace rodiX
 {
     public partial class Calender : Form
     {
-        public Calender()
+        public Calender(Color a,Color b)
         {
             InitializeComponent();
+            coloa(a, b);
+            this.BackColor = a;
         }
 
         private void Calender_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public void coloa(Color a,Color b)
+        {
+            calendar1.BackColor = a;
+            calendar1.ForeColor = b;
+        }
+        private void Calender_ForeColorChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Calender_BackColorChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void calendar1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

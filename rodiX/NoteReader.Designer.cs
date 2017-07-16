@@ -319,9 +319,13 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Zoom = 100;
             this.textBox1.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.textBox1_TextChanged);
+            this.textBox1.Pasting += new System.EventHandler<FastColoredTextBoxNS.TextChangingEventArgs>(this.textBox1_Pasting);
             this.textBox1.Load += new System.EventHandler(this.textBox1_Load);
+            this.textBox1.BackColorChanged += new System.EventHandler(this.textBox1_BackColorChanged);
+            this.textBox1.ForeColorChanged += new System.EventHandler(this.textBox1_ForeColorChanged);
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave_1);
-            
             // 
             // ruler1
             // 

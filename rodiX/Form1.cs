@@ -41,6 +41,10 @@ namespace rodiX
         //"0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv" is the password to decode a text
         private void button1_Click(object sender, EventArgs e)
         {
+            aff();//method to login
+        }
+        void aff()
+        {
             string ame = (new EncodePanel()).finalencryption(name.Text);//encoded text from the textbox ame near the "name" label
             string pass = (new EncodePanel()).finalencryption(password.Text);//encoded text from the textbox password near the "password" label
             string complex = File.ReadAllText(@"10/mover.dll");//data from the mover.dll file
@@ -53,13 +57,13 @@ namespace rodiX
                 string main = wow;
                 string user = main.Split(' ')[0];
                 string passw = main.Split(' ')[1];
-                if(ame == user && passw == pass)
+                if (ame == user && passw == pass)
                 {
-                    login(ame, pass, "0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv",wow);
+                    login(ame, pass, "0aqaqamkdmmkkdmkmkcdalkmemkkmrimfrimcedeoifmirocv", wow);
                 }
             }
         }
-        protected void login(string username,string password,string decodepassword,string full)
+        protected void login(string username, string password, string decodepassword, string full)
         {
             string user = (new EncodePanel()).finaldecryption(username, decodepassword);//username
             string pass = (new EncodePanel()).finaldecryption(password, decodepassword);//password
@@ -83,6 +87,74 @@ namespace rodiX
         private void button4_Click(object sender, EventArgs e)
         {
             (new Recover()).ShowDialog();//show recover dialog
+        }
+        void rcm(string file){
+
+            (new FileInfo(file)).Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly | FileAttributes.Encrypted;
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            o.Filter = "|*.rox";
+            if (o.ShowDialog() == DialogResult.OK)
+            {
+                
+                string tyo = File.ReadAllText(o.FileName).Replace("AAAAAAAAAA", "=");
+                string[] cox = tyo.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                //cox[0]
+                string main = cox[0];
+                string user = main.Split(' ')[0];
+                string passw = main.Split(' ')[1];
+                string ame = (new EncodePanel()).finalencryption(name.Text);//encoded text from the textbox ame near the "name" label
+                string pass = (new EncodePanel()).finalencryption(password.Text);//encoded text from the textbox password near the "password" label
+                if (ame == user && passw == pass)
+                {
+                    (new BringBack()).makeUser(o.FileName);
+                }else
+                {
+                    MessageBox.Show("error probably incorrect username or password");
+                }
+            }
+
+
+        }
+
+        private void name_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter || e.KeyCode == Keys.Down)
+            {
+                password.Focus();
+            }
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Down)
+            {
+                aff();
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                name.Focus();
+            }
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left) { this.Left -= 10; }
+            if (e.KeyCode == Keys.Right) { this.Left += 10; }
+            if (e.KeyCode == Keys.Down) { this.Top += 10; }
+            if (e.KeyCode == Keys.Up) { this.Top -= 10; }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            (new tut()).ShowDialog();
         }
     }
 }

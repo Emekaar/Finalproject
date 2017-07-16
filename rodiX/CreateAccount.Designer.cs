@@ -52,6 +52,7 @@
             this.ame.Name = "ame";
             this.ame.Size = new System.Drawing.Size(406, 34);
             this.ame.TabIndex = 0;
+            this.ame.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ame_KeyDown);
             // 
             // label1
             // 
@@ -85,6 +86,7 @@
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(406, 34);
             this.Password.TabIndex = 2;
+            this.Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Password_KeyDown);
             // 
             // label3
             // 
@@ -106,6 +108,7 @@
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(406, 34);
             this.Confirm.TabIndex = 4;
+            this.Confirm.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Confirm_KeyDown);
             // 
             // label4
             // 
@@ -128,6 +131,7 @@
             this.Ra.Name = "Ra";
             this.Ra.Size = new System.Drawing.Size(406, 34);
             this.Ra.TabIndex = 6;
+            this.Ra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Ra_KeyDown);
             // 
             // label5
             // 
@@ -149,6 +153,7 @@
             this.ans.Name = "ans";
             this.ans.Size = new System.Drawing.Size(406, 34);
             this.ans.TabIndex = 8;
+            this.ans.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ans_KeyDown);
             // 
             // button1
             // 

@@ -45,11 +45,11 @@ namespace rodiX
             }
             try
             {
-                if (Password.Text == Confirm.Text && MessageBox.Show(null, "Create Account??", "", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == DialogResult.OK)
+                if (Password.Text == Confirm.Text && Ra.Text != "" && ans.Text != "" && MessageBox.Show(null, "Create Account??", "", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == DialogResult.OK)
                 {
 
                     EncodePanel a = new EncodePanel();
-                    string name = a.finalencryption(this.ame.Text);
+                    string name = a.finalencryption((this.ame.Text));
                     string password = a.finalencryption(Password.Text);
                     if (!File.ReadAllText(@"10\mover.dll").Contains(name))
                     {
@@ -66,9 +66,9 @@ namespace rodiX
 
                             File.WriteAllText(@"10\mover.dll", File.ReadAllText(@"10\mover.dll") + Environment.NewLine + mover1);
                         }
-                        Directory.CreateDirectory(@"10\Users\" + this.ame.Text);
-                        Directory.CreateDirectory(@"10\Users\" + this.ame.Text + @"\20");
-                        File.WriteAllText(@"10\Users\" + this.ame.Text + @"\30.dll", recoveryquestion + Environment.NewLine + recoveryanswr);
+                        Directory.CreateDirectory(@"10\Users\" + (new EncodePanel()).byteit(this.ame.Text));
+                        Directory.CreateDirectory(@"10\Users\" + (new EncodePanel()).byteit(this.ame.Text) + @"\20");
+                        File.WriteAllText(@"10\Users\" + (new EncodePanel()).byteit(this.ame.Text) + @"\30.dll", recoveryquestion + Environment.NewLine + recoveryanswr);
 
                         string insurance = (new EncodePanel()).finalencryption("wow");
                         MessageBox.Show("Account Created");
@@ -87,7 +87,7 @@ namespace rodiX
                 FileInfo q = new FileInfo(@"10\mover.dll");
 
                 q.Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly | FileAttributes.Encrypted;
-                FileInfo qpwk = new FileInfo((@"10\Users\" + this.ame.Text + @"\30.dll"));
+                FileInfo qpwk = new FileInfo((@"10\Users\" + (new EncodePanel()).byteit(this.ame.Text) + @"\30.dll"));
 
                 qpwk.Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly | FileAttributes.Encrypted;
                 rodiX.Properties.Settings.Default.mover = File.ReadAllText(@"10\mover.dll");
@@ -109,6 +109,54 @@ namespace rodiX
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if(radioButton2.Checked == true) { Password.PasswordChar = '•'; Confirm.PasswordChar = '•'; } else { Password.PasswordChar = '\0'; Confirm.PasswordChar = '\0'; }
+        }
+
+        private void ame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            {
+                Password.Focus();
+            }
+        }
+
+        private void Password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            {
+                Confirm.Focus();
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                ame.Focus();
+            }
+        }
+
+        private void Confirm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            {
+                Ra.Focus();
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                Password.Focus();
+            }
+        }
+
+        private void Ra_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            {
+                ans.Focus();
+            }
+        }
+
+        private void ans_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+            {
+                Ra.Focus();
+            }
         }
     }
 }

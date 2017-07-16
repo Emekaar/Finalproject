@@ -57,6 +57,7 @@
             this.ame.Name = "ame";
             this.ame.Size = new System.Drawing.Size(406, 34);
             this.ame.TabIndex = 20;
+            this.ame.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ame_KeyDown);
             // 
             // button1
             // 
@@ -91,6 +92,7 @@
             this.ans.Name = "ans";
             this.ans.Size = new System.Drawing.Size(406, 34);
             this.ans.TabIndex = 23;
+            this.ans.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ans_KeyDown);
             // 
             // button3
             // 

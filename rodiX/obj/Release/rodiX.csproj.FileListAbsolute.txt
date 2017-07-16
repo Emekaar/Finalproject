@@ -20,22 +20,5 @@ C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Release\rod
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.Calender.resources
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.Confirm.resources
 C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.Settings.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\bin\Release\rodiX.exe.config
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.exe
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.pdb
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\bin\Release\rodiX.exe
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\bin\Release\rodiX.pdb
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\bin\Release\FastColoredTextBox.xml
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.csprojResolveAssemblyReference.cache
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Calculator.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Calender.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Confirm.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.CreateAccount.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Flier.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Form1.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Main.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.NoteReader.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Properties.Resources.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Recover.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.Settings.resources
-C:\Users\Emeka\Documents\finished project\rodiX\rodiX\obj\Release\rodiX.csproj.GenerateResource.Cache
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Release\rodiX.Memo.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Release\Calendar.NET.dll

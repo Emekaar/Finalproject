@@ -12,12 +12,14 @@ namespace rodiX
 {
     public partial class Confirm : Form
     {
-        public Confirm(string full,string path)
+        public Confirm(string full,string path,Color a,Color b)
         {
             InitializeComponent();
             username = full.Split(' ')[0];
             pas = full.Split(' ')[1];
             pat = path;
+            this.BackColor = a;
+            this.ForeColor = b;
         }
         //0 = name
         //1 = password
@@ -37,7 +39,7 @@ namespace rodiX
         {
             if((new EncodePanel()).finalencryption(password.Text) == pas)
             {
-                (new Settings(username, pas, pat)).ShowDialog();
+                (new Settings(username, pas, pat,this.BackColor,this.ForeColor)).ShowDialog();
             }
         }
     }

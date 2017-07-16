@@ -16,6 +16,7 @@ namespace rodiX
             return Encoding.UTF8.GetString(ta);
 
         }
+        public string byteit(string a) { return a; }
         public string encrypt64(string loui)
         {
             //method to encrypt string to base 64
@@ -86,6 +87,8 @@ namespace rodiX
             k = k.Replace("=", "?");
             return k;
         }
+       
+        
         public string finaldecryption(string loui, string password)
         {
             //replace == with ?
