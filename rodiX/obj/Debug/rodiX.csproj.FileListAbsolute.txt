@@ -1,0 +1,47 @@
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\rodiX.exe
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\rodiX.pdb
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.csprojResolveAssemblyReference.cache
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Form1.resources
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Properties.Resources.resources
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.csproj.GenerateResource.Cache
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.exe
+c:\users\henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.pdb
+c:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.CreateAccount.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Main.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Flier.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.NoteReader.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Recover.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\NCalc.dll
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\FastColoredTextBox.dll
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\FastColoredTextBox.xml
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Calculator.resources
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\bin\Debug\MonthCalendar.dll
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Calender.resources
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Confirm.resources
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Settings.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.Memo.resources
+C:\Users\Henry\documents\visual studio 2015\Projects\rodiX\rodiX\bin\Debug\Calendar.NET.dll
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\bin\Debug\Meigen.dll
+C:\Users\Henry\Documents\Visual Studio 2015\Projects\rodiX\rodiX\obj\Debug\rodiX.tut.resources
+C:\Users\ra\Desktop\rodiX\rodiX\bin\Debug\rodiX.exe
+C:\Users\ra\Desktop\rodiX\rodiX\bin\Debug\rodiX.pdb
+C:\Users\ra\Desktop\rodiX\rodiX\bin\Debug\FastColoredTextBox.xml
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.csprojResolveAssemblyReference.cache
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Calculator.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Calender.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Confirm.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.CreateAccount.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Flier.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Form1.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Main.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Memo.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.NoteReader.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Properties.Resources.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Recover.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.Settings.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.tut.resources
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.csproj.GenerateResource.Cache
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.csproj.CoreCompileInputs.cache
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.exe
+C:\Users\ra\Desktop\rodiX\rodiX\obj\Debug\rodiX.pdb
+C:\Users\ra\Desktop\rodiX\rodiX\bin\Debug\rodiX.exe.config
